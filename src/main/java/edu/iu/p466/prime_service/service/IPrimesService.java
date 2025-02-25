@@ -1,6 +1,6 @@
 package edu.iu.p466.prime_service.service;
 
-public interface IPrimeService {
+public interface IPrimesService {
 
     boolean isPrime(long n);
 

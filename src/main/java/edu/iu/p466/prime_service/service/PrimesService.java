@@ -1,6 +1,6 @@
 package edu.iu.p466.prime_service.service;
 
-public class PrimesService implements IPrimeService{
+public class PrimesService implements IPrimesService{
 
     @Override
     public boolean isPrime(long n){
