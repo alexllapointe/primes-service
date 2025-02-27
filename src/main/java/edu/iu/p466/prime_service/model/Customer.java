@@ -10,9 +10,9 @@ public class Customer {
         this.password = password;
     }
 
-    public String getUserName() { return username; }
+    public String getUsername() { return username; }
 
-    public void setUserName(String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
