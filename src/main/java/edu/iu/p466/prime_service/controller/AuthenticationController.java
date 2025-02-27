@@ -9,16 +9,21 @@ import org.springframework.web.bind.annotation.RestController;
 
 import edu.iu.p466.prime_service.model.Customer;
 import edu.iu.p466.prime_service.service.IAuthenticationService;
+import edu.iu.p466.prime_service.service.TokenService;
 
 @RestController
 public class AuthenticationController {
+
+
     private final IAuthenticationService authenticationService;
     private final AuthenticationManager authenticationManager;
+    private TokenService tokenService;
     
 
-    public AuthenticationController(AuthenticationManager authenticationManager, IAuthenticationService authenticationService){
+    public AuthenticationController(AuthenticationManager authenticationManager, IAuthenticationService authenticationService, TokenService tokenService){
         this.authenticationService = authenticationService;
         this.authenticationManager = authenticationManager;
+        this.tokenService = tokenService;
     }
 
 
@@ -36,7 +41,7 @@ public class AuthenticationController {
     public String login(@RequestBody Customer customer){
         Authentication authentication = authenticationManager.authenticate
             (new UsernamePasswordAuthenticationToken(customer.getUsername(), customer.getPassword()));
-        return "success!";
+        return tokenService.generateToken(authentication);
     }
 
 
