@@ -13,7 +13,6 @@ public class Customer {
     private String username;
     private String password;
 
-
     public Customer() {
         
     }
@@ -24,8 +23,6 @@ public class Customer {
     }
 
     public String getUsername() { return username; }
-
-    // public Long getId() { return id; }
 
     public void setUsername(String username) {
         this.username = username;
