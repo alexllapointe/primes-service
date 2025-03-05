@@ -71,7 +71,6 @@ public class SecurityConfig {
 
     @Bean 
     AuthenticationManager authManager(UserDetailsService userDetailsService){
-
         var authProvider = new DaoAuthenticationProvider();
         authProvider.setUserDetailsService(userDetailsService);
         authProvider.setPasswordEncoder(new BCryptPasswordEncoder());

@@ -10,20 +10,20 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import edu.iu.p466.prime_service.model.Customer;
-import edu.iu.p466.prime_service.repository.IAuthenticationRepository;
+import edu.iu.p466.prime_service.repository.AuthenticationDBRepository;
 
 
 @Service
 public class AuthenticationService implements IAuthenticationService, UserDetailsService{
 
-    IAuthenticationRepository authenticationRepository;
+    AuthenticationDBRepository authenticationRepository;
 
-    public AuthenticationService(IAuthenticationRepository authenticationRepository){
+    public AuthenticationService(AuthenticationDBRepository authenticationRepository){
         this.authenticationRepository = authenticationRepository;
     }
 
     @Override
-    public boolean register(Customer customer) throws IOException {
+    public Customer register(Customer customer) throws IOException {
         BCryptPasswordEncoder bc = new BCryptPasswordEncoder();
         String passwordEncoded = bc.encode(customer.getPassword());
         customer.setPassword(passwordEncoded);
@@ -51,9 +51,8 @@ public class AuthenticationService implements IAuthenticationService, UserDetail
 
     @Override
     public boolean login(String username, String password) throws IOException {
-        throw new UnsupportedOperationException("Unimplemented method 'login'");
+        throw new UnsupportedOperationException("login method not shown on the practicum 2 slides...");
     }
-
 
 }
 

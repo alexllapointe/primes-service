@@ -1,9 +1,21 @@
 package edu.iu.p466.prime_service.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+
+
+@Table
+@Entity
 public class Customer {
 
     private String username;
     private String password;
+
+
+    public Customer() {
+        
+    }
 
     public Customer(String username, String password){
         this.username = username;
