@@ -1,6 +1,6 @@
 # spring.application.name=prime-service
 spring:
-  datasoure:
+  datasource:
     url: jdbc:postgresql://localhost:5001/primes
     username: postgres
     password: password
