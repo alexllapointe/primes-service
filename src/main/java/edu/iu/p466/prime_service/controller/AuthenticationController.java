@@ -5,6 +5,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import edu.iu.p466.prime_service.model.Customer;
@@ -12,6 +13,7 @@ import edu.iu.p466.prime_service.service.IAuthenticationService;
 import edu.iu.p466.prime_service.service.TokenService;
 
 @RestController
+@RequestMapping("/auth")
 public class AuthenticationController {
 
 
