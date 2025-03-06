@@ -3,6 +3,7 @@ package edu.iu.p466.prime_service.controller;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,8 @@ import edu.iu.p466.prime_service.service.IAuthenticationService;
 import edu.iu.p466.prime_service.service.TokenService;
 
 @RestController
+@CrossOrigin
+
 @RequestMapping("/auth")
 public class AuthenticationController {
 
