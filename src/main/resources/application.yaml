@@ -2,7 +2,7 @@
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5001/primes    
+    url: jdbc:postgresql://primes-database:5432/primes
     username: postgres
     password: password
 
