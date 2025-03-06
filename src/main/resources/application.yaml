@@ -1,4 +1,5 @@
 # spring.application.name=prime-service
+
 spring:
   datasource:
     url: jdbc:postgresql://primes-database:5432/primes    
@@ -14,5 +15,5 @@ spring:
     init:
       mode: always
 
-  server:
-    port: 8085
+server:
+  port: 8085
