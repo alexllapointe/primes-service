@@ -2,7 +2,7 @@
 
 spring:
   datasource:
-    url: jdbc:postgresql://primes-database:5432/primes
+    url: jdbc:postgresql://localhost:5001/primes
     username: postgres
     password: password
 
@@ -16,4 +16,4 @@ spring:
       mode: always
 
 server:
-  port: 8080
+  port: 8085
