@@ -58,7 +58,7 @@ public class SecurityConfig {
             .csrf(x -> x.disable())
             .authorizeHttpRequests ( auth -> auth
             .requestMatchers(
-                HttpMethod.POST, "/register", "/login").permitAll()
+                HttpMethod.POST, "/register", "/login", "/auth/register","/auth/login").permitAll()
                 .anyRequest().authenticated()
             )
             .sessionManagement(session ->
@@ -77,7 +77,5 @@ public class SecurityConfig {
     }
 
 }
-
-
 
 

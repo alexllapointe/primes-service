@@ -1,4 +1,4 @@
-package edu.iu.p466.prime_service.service;
+package edu.iu.p466.primes_service.service;
 
 import org.springframework.stereotype.Service;
 

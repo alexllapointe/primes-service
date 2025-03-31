@@ -1,10 +1,10 @@
-package edu.iu.p466.prime_service.service;
+package edu.iu.p466.primes_service.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class PrimesServiceTest {
 
+public class PrimesServiceTest {
     PrimesService primesService = new PrimesService();
     @Test
     void testIsPrime() {
