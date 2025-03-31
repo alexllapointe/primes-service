@@ -1,4 +1,4 @@
-package edu.iu.p466.prime_service.controller;
+package edu.iu.p466.primes_service.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import edu.iu.p466.prime_service.service.IPrimesService;
+import edu.iu.p466.primes_service.service.IPrimesService;
 
 @RestController
 @CrossOrigin

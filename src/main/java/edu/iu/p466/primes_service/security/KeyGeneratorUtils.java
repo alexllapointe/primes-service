@@ -1,4 +1,4 @@
-package edu.iu.p466.prime_service.security;
+package edu.iu.p466.primes_service.security;
 
 
 // import org.springframework.security.*;

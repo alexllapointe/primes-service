@@ -1,9 +1,9 @@
-package edu.iu.p466.prime_service.repository;
+package edu.iu.p466.primes_service.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import edu.iu.p466.prime_service.model.Customer;
+import edu.iu.p466.primes_service.model.Customer;
 
 @Repository
 public interface AuthenticationDBRepository extends CrudRepository<Customer, String> {

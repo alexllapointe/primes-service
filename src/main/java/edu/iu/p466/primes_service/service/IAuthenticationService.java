@@ -1,8 +1,8 @@
-package edu.iu.p466.prime_service.service;
+package edu.iu.p466.primes_service.service;
 
 import java.io.IOException;
 
-import edu.iu.p466.prime_service.model.Customer;
+import edu.iu.p466.primes_service.model.Customer;
 
 public interface IAuthenticationService {
     Customer register(Customer customer) throws IOException;

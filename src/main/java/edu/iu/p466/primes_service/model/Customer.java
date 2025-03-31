@@ -1,4 +1,4 @@
-package edu.iu.p466.prime_service.model;
+package edu.iu.p466.primes_service.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

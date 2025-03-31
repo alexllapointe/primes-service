@@ -1,4 +1,4 @@
-package edu.iu.p466.prime_service.service;
+package edu.iu.p466.primes_service.service;
 
 import java.io.IOException;
 
@@ -9,8 +9,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import edu.iu.p466.prime_service.model.Customer;
-import edu.iu.p466.prime_service.repository.AuthenticationDBRepository;
+import edu.iu.p466.primes_service.model.Customer;
+import edu.iu.p466.primes_service.repository.AuthenticationDBRepository;
 
 
 @Service

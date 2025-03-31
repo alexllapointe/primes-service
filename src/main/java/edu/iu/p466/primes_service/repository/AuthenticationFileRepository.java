@@ -1,4 +1,4 @@
-package edu.iu.p466.prime_service.repository;
+package edu.iu.p466.primes_service.repository;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
-import edu.iu.p466.prime_service.model.Customer;
+import edu.iu.p466.primes_service.model.Customer;
 
 
 @Repository
